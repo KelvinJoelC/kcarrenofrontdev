@@ -9,12 +9,11 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.fragment.subscribe((fragment: any) => {
-      console.log('fragmaen', fragment)
       if (fragment) {
         const element = document.querySelector(`#${fragment}`);
         if (element) element.scrollIntoView({ behavior: 'smooth' });

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 @Component({
@@ -17,7 +16,7 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
     // Set up translation languages and default
     this.translate.addLangs(['en', 'es']);
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('es');
   }
 
   switchLanguage(language: string) {
