@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
@@ -10,6 +10,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent implements OnInit {
+  
+  @Output() changeLenguage: EventEmitter<string> = new EventEmitter<string>();
+
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {

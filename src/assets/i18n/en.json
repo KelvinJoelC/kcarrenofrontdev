@@ -1,3 +1,6 @@
 {
-    "HELLO": "Hello"
+    "HELLO": "Hello",
+    "HOME": {
+        "TITLE_H1": "Hi, I am Kelvin Carreno!"
+    }
 }
