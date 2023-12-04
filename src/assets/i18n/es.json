@@ -1,6 +1,8 @@
 {
     "HELLO": "Hola", 
     "HOME": {
-        "TITLE_H1": "¡Hola! Soy Kelvin Carreño"
+        "NAME": "Kelvin Carreño", 
+        "TITLE": "¡Hola! Soy", 
+        "SUBTITLE": "Front End Developer"
     }
 }

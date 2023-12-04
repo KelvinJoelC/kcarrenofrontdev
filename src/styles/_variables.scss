@@ -1,7 +1,8 @@
 /* Navbar */
-$navbar-bg-color: #333;
-$navbar-text-color: white;
+$navbar-bg-color: transparent;
+$navbar-text-color: rgb(212, 27, 27);
 $navbar-hover-bg-color: #555;
 $navbar-height: 60px;
 $navbar-width: 100%;
 $navbar-index: 1000;
+$navbar-backdrop: blur(10px);

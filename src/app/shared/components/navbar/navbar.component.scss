@@ -8,6 +8,7 @@ nav {
   height: $navbar-height;
   background-color: $navbar-bg-color;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: $navbar-backdrop;
   z-index: $navbar-index;
   display: flex;
   align-items: center;

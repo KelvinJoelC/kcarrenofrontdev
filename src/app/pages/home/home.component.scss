@@ -2,6 +2,57 @@ section {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;    
+    background-color: grey;
+}
+
+img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 1rem;
+
+    &_pre {
+        font-size: 2rem;
+    }
+    &_rol{
+        font-size: 2rem;
+    }
+    &_name{
+        font-size: 2rem;
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .title{
+        &_pre {
+            order: 1;
+        }
+        &_rol{
+            order: 2;
+        }
+        &_name{
+            order: 3;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    title{
+        &_pre {
+            font-size: 18px;
+        }
+    }
 }
